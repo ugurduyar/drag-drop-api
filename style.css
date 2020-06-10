@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Lexend Tera", sans-serif;
+}
+body {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+}
+
+.draggable-list {
+  border: 2px solid black;
+  padding: 0;
+  border-radius: 10px;
+  list-style: none;
+}
+
+.draggable-list li {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex: 1;
+}
+
+.draggable-list li:not(:last-of-type) {
+  border-bottom: 2px solid black;
+}
+
+.draggable-list .number {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  height: 60px;
+  width: 60px;
+}
+
+.draggable-list .person-name {
+  margin: 0 20px 0 0;
+}
+.draggable-list li.right .person-name {
+  color: green;
+}
+.draggable-list li.wrong .person-name {
+  color: red;
+}
+
+.draggable {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  flex: 1;
+}
