@@ -41,6 +41,10 @@ body {
   width: 60px;
 }
 
+.draggable-list li.over .draggable {
+  background-color: darkred;
+}
+
 .draggable-list .person-name {
   margin: 0 20px 0 0;
 }
@@ -58,4 +62,21 @@ body {
   justify-content: space-between;
   padding: 15px;
   flex: 1;
+}
+
+.check-btn {
+  background-color: yellow;
+  border: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.check-btn:active {
+  transform: scale(0.98);
+}
+
+.check-btn:focus {
+  outline: none;
 }
